@@ -1,0 +1,21 @@
+
+<!-- <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
+   xmlns:Gif="nativescript-gif">
+  <StackLayout class="p-20">
+    <Gif:Gif src="~/android_sample.gif" height="400" />
+  </StackLayout>
+</Page> -->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+  <Page.actionBar>
+    <ActionBar title="OAuth Demo: TypeScript" icon="" class="action-bar">
+    </ActionBar>
+  </Page.actionBar>
+
+  <StackLayout class="p-20">
+    <Button text="Login facebook" tap="onLoginTap" class="btn btn-primary btn-active"/>
+    <Button text="Login google" tap="onLoginTapg" class="btn btn-primary btn-active"/>
+    <Button text="Login twitter" tap="onLoginTapTwit" class="btn btn-primary btn-active"/>
+    <Button text="Logout" tap="onLogoutTap" class="btn btn-primary btn-active"/>
+    <Label id="myLabel" text="{{ myText }}" />
+  </StackLayout>
+</Page>

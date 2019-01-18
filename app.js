@@ -1,0 +1,24 @@
+"use strict";
+/*
+In NativeScript, the app.ts file is the entry point to your application.
+You can use this file to perform app-level initialization, but the primary
+purpose of the file is to pass control to the app’s first module.
+*/
+Object.defineProperty(exports, "__esModule", { value: true });
+var application = require("tns-core-modules/application");
+// import * as tnsOAuthModule from "nativescript-oauth";
+// //const client = new TnsOAuthClient(providerType);
+// var facebookInitOptions: tnsOAuthModule.ITnsOAuthOptionsFacebook = {
+//  clientId: "228943498016078",
+// clientSecret: "62a779bebd2c16ad743450ed57daa97d",
+//   scope: ["email"] //whatever other scopes you need
+// };
+// tnsOAuthModule.initFacebook(facebookInitOptions);
+var auth_service_1 = require("./auth-service");
+auth_service_1.configureOAuthProviders();
+application.run({ moduleName: "app-root" });
+/*
+Do not place any code after the application has been started as it will not
+be executed on iOS.
+*/
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7OztFQUlFOztBQUVGLDBEQUE0RDtBQUc1RCx3REFBd0Q7QUFFeEQscURBQXFEO0FBRXJELHVFQUF1RTtBQUN2RSxnQ0FBZ0M7QUFDaEMsb0RBQW9EO0FBQ3BELHNEQUFzRDtBQUN0RCxLQUFLO0FBRUwsb0RBQW9EO0FBQ3BELCtDQUF5RDtBQUN6RCxzQ0FBdUIsRUFBRSxDQUFDO0FBRTFCLFdBQVcsQ0FBQyxHQUFHLENBQUMsRUFBRSxVQUFVLEVBQUUsVUFBVSxFQUFFLENBQUMsQ0FBQztBQUU1Qzs7O0VBR0UiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuSW4gTmF0aXZlU2NyaXB0LCB0aGUgYXBwLnRzIGZpbGUgaXMgdGhlIGVudHJ5IHBvaW50IHRvIHlvdXIgYXBwbGljYXRpb24uXG5Zb3UgY2FuIHVzZSB0aGlzIGZpbGUgdG8gcGVyZm9ybSBhcHAtbGV2ZWwgaW5pdGlhbGl6YXRpb24sIGJ1dCB0aGUgcHJpbWFyeVxucHVycG9zZSBvZiB0aGUgZmlsZSBpcyB0byBwYXNzIGNvbnRyb2wgdG8gdGhlIGFwcOKAmXMgZmlyc3QgbW9kdWxlLlxuKi9cblxuaW1wb3J0ICogYXMgYXBwbGljYXRpb24gZnJvbSBcInRucy1jb3JlLW1vZHVsZXMvYXBwbGljYXRpb25cIjtcblxuXG4vLyBpbXBvcnQgKiBhcyB0bnNPQXV0aE1vZHVsZSBmcm9tIFwibmF0aXZlc2NyaXB0LW9hdXRoXCI7XG4gXG4vLyAvL2NvbnN0IGNsaWVudCA9IG5ldyBUbnNPQXV0aENsaWVudChwcm92aWRlclR5cGUpO1xuIFxuLy8gdmFyIGZhY2Vib29rSW5pdE9wdGlvbnM6IHRuc09BdXRoTW9kdWxlLklUbnNPQXV0aE9wdGlvbnNGYWNlYm9vayA9IHtcbi8vICBjbGllbnRJZDogXCIyMjg5NDM0OTgwMTYwNzhcIixcbi8vIGNsaWVudFNlY3JldDogXCI2MmE3NzliZWJkMmMxNmFkNzQzNDUwZWQ1N2RhYTk3ZFwiLFxuLy8gICBzY29wZTogW1wiZW1haWxcIl0gLy93aGF0ZXZlciBvdGhlciBzY29wZXMgeW91IG5lZWRcbi8vIH07XG4gXG4vLyB0bnNPQXV0aE1vZHVsZS5pbml0RmFjZWJvb2soZmFjZWJvb2tJbml0T3B0aW9ucyk7XG5pbXBvcnQgeyBjb25maWd1cmVPQXV0aFByb3ZpZGVycyB9IGZyb20gXCIuL2F1dGgtc2VydmljZVwiO1xuY29uZmlndXJlT0F1dGhQcm92aWRlcnMoKTtcblxuYXBwbGljYXRpb24ucnVuKHsgbW9kdWxlTmFtZTogXCJhcHAtcm9vdFwiIH0pO1xuXG4vKlxuRG8gbm90IHBsYWNlIGFueSBjb2RlIGFmdGVyIHRoZSBhcHBsaWNhdGlvbiBoYXMgYmVlbiBzdGFydGVkIGFzIGl0IHdpbGwgbm90XG5iZSBleGVjdXRlZCBvbiBpT1MuXG4qL1xuIl19
