@@ -13,9 +13,9 @@ exports.configureOAuthProviders = configureOAuthProviders;
 function configureOAuthProviderGoogle() {
     var googleProviderOptions = {
         openIdSupport: "oid-full",
-        clientId: "334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald.apps.googleusercontent.com",
-        redirectUri: "com.googleusercontent.apps.334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald:/auth",
-        urlScheme: "com.googleusercontent.apps.334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald",
+        clientId: "<paste your won>.apps.googleusercontent.com",
+        redirectUri: "com.googleusercontent.apps.<paste your won>:/auth",
+        urlScheme: "com.googleusercontent.apps.<paste your won>",
         scopes: ["email"]
     };
     var googleProvider = new providers_1.TnsOaProviderGoogle(googleProviderOptions);
@@ -25,7 +25,7 @@ function configureOAuthProviderFacebook() {
     var facebookProviderOptions = {
         openIdSupport: "oid-none",
         clientId: "228943498016078",
-        clientSecret: "62a779bebd2c16ad743450ed57daa97d",
+        clientSecret: "<paste your won>",
         redirectUri: "https://webnexttechnology.com/f.php",
         scopes: ["email"]
     };
