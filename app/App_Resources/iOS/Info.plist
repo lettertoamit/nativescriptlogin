@@ -53,15 +53,15 @@
 			<key>CFBundleURLSchemes</key>
 			<array> 
 				<string>msalf376fa87-64a9-49a1-8b57-e0d48fc08107</string>
-				<string>fb228943498016078</string>
-				<string>com.googleusercontent.apps.334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald</string>
+				<string>fb22894349<paste your won></string>
+				<string>com.googleusercontent.apps.<paste your won></string>
 			</array>
 		</dict>
 	</array>
 	<key>CLIENT_ID</key>
-	<string>334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald.apps.googleusercontent.com</string>
+	<string><paste your won>.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.334689858239-s9vk61pfvtpc9877vc2ilbb3tqk12ald</string>
+	<string>com.googleusercontent.apps.<paste your won></string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
